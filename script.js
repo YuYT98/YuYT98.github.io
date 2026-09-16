@@ -1,9 +1,20 @@
 (() => {
   if (window.lucide) lucide.createIcons();
 
+  const profile = document.querySelector('.profile-frame img');
+  if (profile) profile.src = 'https://avatars.githubusercontent.com/u/86007991?v=4';
+
   document.querySelectorAll('[data-placeholder="linkedin"]').forEach((el) => {
     el.addEventListener('click', (e) => e.preventDefault());
     el.title = 'LinkedIn URL to be added';
+  });
+
+  document.querySelectorAll('a[href$="Yuetong_Yu_CV.pdf"]').forEach((el) => {
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.location.href = 'mailto:yuyt1998@gmail.com?subject=CV%20Request%20-%20Yuetong%20Yu';
+    });
+    el.title = 'CV file will be added in the next revision';
   });
 
   const header = document.querySelector('.site-header');
