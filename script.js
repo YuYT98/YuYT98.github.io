@@ -4,11 +4,6 @@
   const profile = document.querySelector('.profile-frame img');
   if (profile) profile.src = 'https://avatars.githubusercontent.com/u/86007991?v=4';
 
-  document.querySelectorAll('[data-placeholder="linkedin"]').forEach((el) => {
-    el.addEventListener('click', (e) => e.preventDefault());
-    el.title = 'LinkedIn URL to be added';
-  });
-
   document.querySelectorAll('a[href$="Yuetong_Yu_CV.pdf"]').forEach((el) => {
     el.addEventListener('click', (e) => {
       e.preventDefault();
