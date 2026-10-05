@@ -42,8 +42,6 @@
         { opacity: 1, y: 0, duration: 0.95, ease: 'power3.out', scrollTrigger: { trigger: el, start: 'top 84%', once: true } }
       );
     });
-    gsap.to('.hero-cambridge', { yPercent: 5, ease: 'none', scrollTrigger: { trigger: '#about', start: 'top top', end: 'bottom top', scrub: 1 } });
-    gsap.to('.hero-vancouver', { yPercent: 4, ease: 'none', scrollTrigger: { trigger: '#about', start: 'top top', end: 'bottom top', scrub: 1 } });
   }
 
   if (window.Lenis && window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
